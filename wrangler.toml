@@ -1,0 +1,5 @@
+name = "wnlin-org"
+compatibility_date = "2023-12-17"
+
+# Deploy static assets from the repository root.
+assets = { directory = "." }
