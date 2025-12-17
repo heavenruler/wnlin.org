@@ -328,6 +328,11 @@ p {
   background: linear-gradient(120deg, rgba(124, 240, 196, 0.12), rgba(255, 212, 121, 0.14));
 }
 
+.updated-tag {
+  margin: -4px 0 10px;
+  font-size: 14px;
+}
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;

@@ -47,7 +47,8 @@
         <a class="pill" href="https://www.linkedin.com/in/wnlin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </nav>
     </header>
-
+    <p class="muted updated-tag">Last updated: <time datetime="2025-12-17">Dec 17, 2025</time></p>
+ 
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Product-focused engineer</p>
@@ -234,7 +235,6 @@
       <div>
         <p class="eyebrow">Next steps</p>
         <h4>Let’s build something useful together.</h4>
-        <p class="muted">Last updated: <time data-last-updated datetime=""></time></p>
       </div>
       <div class="cta-row">
         <a class="button primary" href="mailto:hello@wnlin.org">Email</a>
@@ -242,17 +242,5 @@
       </div>
     </footer>
   </main>
-  <script>
-    // Populate the "Last updated" time with the current date.
-    (function () {
-      var el = document.querySelector('[data-last-updated]');
-      if (!el) return;
-      var now = new Date();
-      var iso = now.toISOString().split('T')[0];
-      var display = now.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
-      el.setAttribute('datetime', iso);
-      el.textContent = display;
-    })();
-  </script>
 </body>
 </html>
