@@ -1,4 +1,5 @@
 name = "wnlin-org"
+main = "_worker.js"
 compatibility_date = "2023-12-17"
 
 # Deploy static assets from the repository root.
