@@ -114,6 +114,20 @@ p {
   line-height: 1.6;
 }
 
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+  text-underline-offset: 4px;
+  text-decoration-color: transparent;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.inline-link:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-2);
+}
+
 .muted {
   color: var(--muted);
 }
