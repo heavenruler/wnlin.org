@@ -317,6 +317,16 @@ p {
   font-size: 14px;
 }
 
+.skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skill-category h4 {
+  margin: 0 0 6px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
