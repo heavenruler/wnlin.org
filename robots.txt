@@ -1,5 +1,6 @@
 # robots.txt for wnlin.org
-# Content-signal: search=yes,ai-train=no
+
 User-agent: *
 Allow: /
+
 Sitemap: https://wnlin.org/sitemap.xml
