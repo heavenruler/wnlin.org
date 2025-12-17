@@ -12,6 +12,7 @@ COMMIT_MSG ?= "chore: update site"
 
 test:
 	@echo "Starting local server on port $(PORT) (Ctrl+C to stop)..."
+	@echo "http://localhost:$(PORT)"
 	python3 -m http.server $(PORT)
 
 commit:
