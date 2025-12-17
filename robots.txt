@@ -1,3 +1,4 @@
+# robots.txt for wnlin.org
 User-agent: *
 Allow: /
 Sitemap: https://wnlin.org/sitemap.xml
