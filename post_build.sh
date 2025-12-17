@@ -14,13 +14,24 @@ if [ ! -f "index.html" ]; then
 fi
 
 echo "Post-build: pinging Google with sitemap ${SITEMAP_URL}..."
+
+# URL-encode the sitemap URL to avoid 404 on ping (colon/slash chars must be encoded).
+ENCODED_SITEMAP_URL=$(
+  python3 - <<'PY' "$SITEMAP_URL"
+import sys, urllib.parse
+print(urllib.parse.quote(sys.argv[1], safe=""))
+PY
+)
+
+PING_URL="https://www.google.com/ping?sitemap=${ENCODED_SITEMAP_URL}"
+
 if command -v curl >/dev/null 2>&1; then
-  if ! curl -fsS "https://www.google.com/ping?sitemap=${SITEMAP_URL}"; then
-    echo "Warning: sitemap ping failed (curl returned non-zero)." >&2
+  if ! curl -fsS "$PING_URL"; then
+    echo "Warning: sitemap ping failed (curl returned non-zero) for ${PING_URL}." >&2
   fi
 elif command -v wget >/dev/null 2>&1; then
-  if ! wget -qO- "https://www.google.com/ping?sitemap=${SITEMAP_URL}"; then
-    echo "Warning: sitemap ping failed (wget returned non-zero)." >&2
+  if ! wget -qO- "$PING_URL"; then
+    echo "Warning: sitemap ping failed (wget returned non-zero) for ${PING_URL}." >&2
   fi
 else
   echo "Warning: neither curl nor wget is available; skip ping." >&2
