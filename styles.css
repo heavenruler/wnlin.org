@@ -305,6 +305,34 @@ p {
   box-shadow: var(--glow);
 }
 
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.lang-button {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 160ms ease;
+}
+
+.lang-button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.lang-button.active {
+  background: linear-gradient(135deg, #7cf0c4, #5ad1ff);
+  color: #0a0f1d;
+  border-color: transparent;
+}
+
 .card-header {
   display: flex;
   align-items: center;

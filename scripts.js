@@ -38,4 +38,51 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.textContent = expanded ? 'Show less' : 'Show more';
     });
   }
+
+  // Language switcher (placeholder translations)
+  const langButtons = Array.from(document.querySelectorAll('.lang-button'));
+  const translations = {
+    en: {
+      'hero.eyebrow': 'Product-focused engineer — performance, reliability, velocity first',
+      'hero.headline': 'Building dependable data platforms and systems with reliability-first design.',
+      'hero.lede': 'Delivering DBA/DBRE and systems architecture with a focus on high availability, observability, platformization, and distributed systems—hands-on execution paired with systematic decisions for stability, speed, and long-term evolution.'
+    },
+    'zh-TW': {
+      // Placeholder: defaults to English for now
+    },
+    'zh-CN': {
+      // Placeholder: defaults to English for now
+    }
+  };
+
+  const i18nDefaults = {};
+  const i18nNodes = Array.from(document.querySelectorAll('[data-i18n]'));
+  i18nNodes.forEach((node) => {
+    const key = node.dataset.i18n;
+    if (!i18nDefaults[key]) {
+      i18nDefaults[key] = node.textContent.trim();
+    }
+  });
+
+  function applyLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
+    i18nNodes.forEach((node) => {
+      const key = node.dataset.i18n;
+      const value =
+        (translations[lang] && translations[lang][key]) ||
+        (translations.en && translations.en[key]) ||
+        i18nDefaults[key] ||
+        node.textContent;
+      node.textContent = value;
+    });
+    langButtons.forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+  }
+
+  langButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      applyLanguage(btn.dataset.lang);
+    });
+  });
 });
