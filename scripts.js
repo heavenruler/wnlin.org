@@ -254,4 +254,17 @@ document.addEventListener('DOMContentLoaded', () => {
       applyLanguage(btn.dataset.lang);
     });
   });
+
+  // Consent banner
+  const consentBanner = document.querySelector('.consent-banner');
+  const consentBtn = document.getElementById('consent-accept');
+  if (consentBanner && consentBtn) {
+    if (localStorage.getItem('wnlin-consent') === 'accepted') {
+      consentBanner.style.display = 'none';
+    }
+    consentBtn.addEventListener('click', () => {
+      localStorage.setItem('wnlin-consent', 'accepted');
+      consentBanner.style.display = 'none';
+    });
+  }
 });

@@ -391,6 +391,34 @@ p {
   color: var(--muted);
 }
 
+.consent-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(520px, 90vw);
+  background: rgba(15, 22, 40, 0.95);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: var(--glow);
+  z-index: 30;
+}
+
+.consent-banner p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.consent-banner .button {
+  flex-shrink: 0;
+}
+
 .card-header {
   display: flex;
   align-items: center;
