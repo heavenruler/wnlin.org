@@ -225,6 +225,101 @@ p {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+.contact-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--stroke);
+  color: var(--text);
+  text-decoration: none;
+  transition: all 160ms ease;
+}
+
+.icon-button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.icon-button.github {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.icon-button.github:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-button.linkedin {
+  color: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.35);
+  background: rgba(10, 102, 194, 0.08);
+}
+
+.icon-button.linkedin:hover {
+  background: rgba(10, 102, 194, 0.16);
+  border-color: rgba(10, 102, 194, 0.5);
+}
+
+.icon-button.facebook {
+  color: #1877f2;
+  border-color: rgba(24, 119, 242, 0.35);
+  background: rgba(24, 119, 242, 0.08);
+}
+
+.icon-button.facebook:hover {
+  background: rgba(24, 119, 242, 0.16);
+  border-color: rgba(24, 119, 242, 0.5);
+}
+
+.icon-button.wechat {
+  color: #1aad19;
+  border-color: rgba(26, 173, 25, 0.35);
+  background: rgba(26, 173, 25, 0.08);
+}
+
+.icon-button.wechat:hover {
+  background: rgba(26, 173, 25, 0.16);
+  border-color: rgba(26, 173, 25, 0.5);
+}
+
+.icon-button.line {
+  color: #00c300;
+  border-color: rgba(0, 195, 0, 0.35);
+  background: rgba(0, 195, 0, 0.08);
+}
+
+.icon-button.line:hover {
+  background: rgba(0, 195, 0, 0.16);
+  border-color: rgba(0, 195, 0, 0.5);
+}
+
+.icon-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .card {
   background: linear-gradient(140deg, var(--panel), var(--panel-strong));
   border: 1px solid var(--stroke);
