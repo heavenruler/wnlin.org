@@ -27,19 +27,15 @@ gtag('config', 'G-GVHQ00L7T7');
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('projects-toggle');
   const hiddenProjects = Array.from(document.querySelectorAll('.hidden-project'));
+  const grid = document.getElementById('projects-grid');
 
-  if (toggle && hiddenProjects.length) {
-    hiddenProjects.forEach((card) => {
-      card.style.display = 'none';
-    });
-
+  if (toggle && hiddenProjects.length && grid) {
+    grid.classList.add('projects-collapsed');
     toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      hiddenProjects.forEach((card) => {
-        card.style.display = expanded ? 'none' : '';
-      });
-      toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-      toggle.textContent = expanded ? 'Show more' : 'Show less';
+      const expanded = grid.classList.contains('projects-collapsed');
+      grid.classList.toggle('projects-collapsed', !expanded);
+      toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      toggle.textContent = expanded ? 'Show less' : 'Show more';
     });
   }
 });

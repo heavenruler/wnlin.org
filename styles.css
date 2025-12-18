@@ -390,7 +390,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.hidden-project {
+.projects-collapsed .hidden-project {
   display: none;
 }
 
