@@ -374,6 +374,23 @@ p {
   border-color: transparent;
 }
 
+.ad-section {
+  margin-top: -8px;
+}
+
+.ad-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
 .card-header {
   display: flex;
   align-items: center;
