@@ -236,77 +236,46 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--stroke);
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(var(--panel), var(--panel)),
+    linear-gradient(135deg, rgba(124, 240, 196, 0.4), rgba(90, 209, 255, 0.25));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   color: var(--text);
   text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   transition: all 160ms ease;
+  overflow: hidden;
 }
 
 .icon-button:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
 }
 
-.icon-button.github {
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.35);
+.icon-button::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(circle at 30% 30%, rgba(124, 240, 196, 0.24), transparent 55%);
+  opacity: 0;
+  transition: opacity 160ms ease;
 }
 
-.icon-button.github:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.icon-button.linkedin {
-  color: #0a66c2;
-  border-color: rgba(10, 102, 194, 0.35);
-  background: rgba(10, 102, 194, 0.08);
-}
-
-.icon-button.linkedin:hover {
-  background: rgba(10, 102, 194, 0.16);
-  border-color: rgba(10, 102, 194, 0.5);
-}
-
-.icon-button.facebook {
-  color: #1877f2;
-  border-color: rgba(24, 119, 242, 0.35);
-  background: rgba(24, 119, 242, 0.08);
-}
-
-.icon-button.facebook:hover {
-  background: rgba(24, 119, 242, 0.16);
-  border-color: rgba(24, 119, 242, 0.5);
-}
-
-.icon-button.wechat {
-  color: #1aad19;
-  border-color: rgba(26, 173, 25, 0.35);
-  background: rgba(26, 173, 25, 0.08);
-}
-
-.icon-button.wechat:hover {
-  background: rgba(26, 173, 25, 0.16);
-  border-color: rgba(26, 173, 25, 0.5);
-}
-
-.icon-button.line {
-  color: #00c300;
-  border-color: rgba(0, 195, 0, 0.35);
-  background: rgba(0, 195, 0, 0.08);
-}
-
-.icon-button.line:hover {
-  background: rgba(0, 195, 0, 0.16);
-  border-color: rgba(0, 195, 0, 0.5);
+.icon-button:hover::before {
+  opacity: 1;
 }
 
 .icon-button svg {
   width: 20px;
   height: 20px;
+  position: relative;
 }
 
 .sr-only {
