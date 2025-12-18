@@ -261,7 +261,7 @@
         <h3>Projects</h3>
       </div>
       <p class="lede">Architecture advising to maximize performance and reliability across hybrid cloud data stacks.</p>
-      <div class="grid three">
+      <div class="grid three" id="projects-grid">
         <article class="card project">
           <div class="card-header">
             <h4>Ops Command Center</h4>
@@ -298,6 +298,33 @@
             <span class="tag">Figma</span>
           </div>
         </article>
+        <article class="card project hidden-project">
+          <div class="card-header">
+            <h4>Data Reliability Toolkit</h4>
+            <span class="tag accent">Reliability</span>
+          </div>
+          <p class="muted">DBRE playbooks and automation for SLOs, backup drills, and failover readiness.</p>
+          <div class="tag-row">
+            <span class="tag">SLOs</span>
+            <span class="tag">Backups</span>
+            <span class="tag">Chaos</span>
+          </div>
+        </article>
+        <article class="card project hidden-project">
+          <div class="card-header">
+            <h4>Hybrid DB Migration Engine</h4>
+            <span class="tag accent">Data</span>
+          </div>
+          <p class="muted">Orchestrated cutovers for RDBMS/NoSQL/HTAP across hybrid cloud with zero-downtime patterns.</p>
+          <div class="tag-row">
+            <span class="tag">Aurora</span>
+            <span class="tag">TiDB</span>
+            <span class="tag">Redis</span>
+          </div>
+        </article>
+      </div>
+      <div class="cta-row">
+        <button class="button ghost" id="projects-toggle" aria-expanded="false" aria-controls="projects-grid">Show more</button>
       </div>
     </section>
 
