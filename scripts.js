@@ -26,9 +26,13 @@ gtag('config', 'G-GVHQ00L7T7');
 // Projects show more/less toggle
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('projects-toggle');
-  const hiddenProjects = document.querySelectorAll('.hidden-project');
+  const hiddenProjects = Array.from(document.querySelectorAll('.hidden-project'));
 
   if (toggle && hiddenProjects.length) {
+    hiddenProjects.forEach((card) => {
+      card.style.display = 'none';
+    });
+
     toggle.addEventListener('click', () => {
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
       hiddenProjects.forEach((card) => {
