@@ -61,7 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'overview.card2.title': 'Reliability',
       'overview.card2.body': 'DBRE mindset: build resilient services with SLOs, HA/backup drills, and observability that keeps performance predictable.',
       'overview.card3.title': 'Platform enablement',
-      'overview.card3.body': 'Ship reusable platforms, guardrails, and tooling so product teams move faster without sacrificing stability.'
+      'overview.card3.body': 'Ship reusable platforms, guardrails, and tooling so product teams move faster without sacrificing stability.',
+      'certs.eyebrow': 'Certifications',
+      'certs.heading': 'Credentials'
     },
     'zh-TW': {
       'hero.eyebrow': '以性能、穩定度、交付速度為核心的產品導向工程師',
@@ -82,7 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'overview.card2.title': '可靠性',
       'overview.card2.body': '以 DBRE 思維打造具 SLO、演練與可觀測性的韌性服務，維持穩定且可預期的效能。',
       'overview.card3.title': '平台賦能',
-      'overview.card3.body': '交付可重用的平台、保護欄與工具，讓產品團隊在維持穩定性的前提下加速前進。'
+      'overview.card3.body': '交付可重用的平台、保護欄與工具，讓產品團隊在維持穩定性的前提下加速前進。',
+      'certs.eyebrow': '認證',
+      'certs.heading': '憑證'
     },
     'zh-CN': {
       'hero.eyebrow': '以性能、稳定度、交付速度为核心的产品导向工程师',
@@ -103,7 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'overview.card2.title': '可靠性',
       'overview.card2.body': '以 DBRE 思维打造具 SLO、演练与可观测性的韧性服务，保持稳定且可预期的性能。',
       'overview.card3.title': '平台赋能',
-      'overview.card3.body': '交付可复用的平台、保护栏与工具，让产品团队在保持稳定性的前提下加速前进。'
+      'overview.card3.body': '交付可复用的平台、保护栏与工具，让产品团队在保持稳定性的前提下加速前进。',
+      'certs.eyebrow': '认证',
+      'certs.heading': '凭证'
     }
   };
 
