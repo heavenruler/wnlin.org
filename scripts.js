@@ -68,7 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'overview.card3.title': 'Platform enablement',
       'overview.card3.body': 'Ship reusable platforms, guardrails, and tooling so product teams move faster without sacrificing stability.',
       'certs.eyebrow': 'Certifications',
-      'certs.heading': 'Credentials'
+      'certs.heading': 'Credentials',
+      'education.eyebrow': 'Education',
+      'education.heading': 'Academic',
+      'education.school': 'Shu-Te University',
+      'education.degree': 'M.S. Computer Science',
+      'education.city': 'Kaohsiung'
     },
     'zh-TW': {
       'hero.eyebrow': '以性能、穩定度、交付速度為核心的產品導向工程師',
@@ -96,7 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'overview.card3.title': '平台賦能',
       'overview.card3.body': '交付可重用的平台、保護欄與工具，讓產品團隊在維持穩定性的前提下加速前進。',
       'certs.eyebrow': '認證',
-      'certs.heading': '憑證'
+      'certs.heading': '憑證',
+      'education.eyebrow': '學歷',
+      'education.heading': '學術',
+      'education.school': '樹德科技大學',
+      'education.degree': '資訊工程所碩士',
+      'education.city': '高雄'
     },
     'zh-CN': {
       'hero.eyebrow': '以性能、稳定度、交付速度为核心的产品导向工程师',
@@ -124,7 +134,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'overview.card3.title': '平台赋能',
       'overview.card3.body': '交付可复用的平台、保护栏与工具，让产品团队在保持稳定性的前提下加速前进。',
       'certs.eyebrow': '认证',
-      'certs.heading': '凭证'
+      'certs.heading': '凭证',
+      'education.eyebrow': '学历',
+      'education.heading': '学术',
+      'education.school': '树德科技大学',
+      'education.degree': '资讯工程所硕士',
+      'education.city': '高雄'
     }
   };
 
