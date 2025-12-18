@@ -22,3 +22,20 @@ function gtag() { dataLayer.push(arguments); }
 })();
 gtag('js', new Date());
 gtag('config', 'G-GVHQ00L7T7');
+
+// Projects show more/less toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('projects-toggle');
+  const hiddenProjects = document.querySelectorAll('.hidden-project');
+
+  if (toggle && hiddenProjects.length) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      hiddenProjects.forEach((card) => {
+        card.style.display = expanded ? 'none' : '';
+      });
+      toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      toggle.textContent = expanded ? 'Show more' : 'Show less';
+    });
+  }
+});
