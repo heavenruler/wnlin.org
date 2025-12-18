@@ -258,6 +258,14 @@ p {
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
 }
 
+.icon-button.facebook {
+  color: var(--muted);
+}
+
+.icon-button.facebook:hover {
+  color: #1877f2;
+}
+
 .icon-button::before {
   content: "";
   position: absolute;
