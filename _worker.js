@@ -11,7 +11,7 @@ export default {
       "img-src 'self' https://www.google-analytics.com https: data:",
       "font-src 'self' https://fonts.gstatic.com data:",
       "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://fundingchoicesmessages.google.com",
-      "frame-src https://www.googletagmanager.com",
+      "frame-src https://www.googletagmanager.com https://fundingchoicesmessages.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://www.google.com",
       "object-src 'none'",
       "base-uri 'self'",
     ].join("; ");
