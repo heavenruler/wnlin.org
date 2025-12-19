@@ -109,13 +109,22 @@ document.addEventListener('DOMContentLoaded', () => {
       'experience.pixnet.tag': 'Systems Operations',
       'experience.pixnet.b1': 'Managed and operated production networked systems.',
       'experience.pixnet.b2': 'Administered databases to ensure availability and reliability.',
+      'projects.eyebrow': 'Selected work',
+      'projects.heading': 'Projects',
+      'projects.lede': 'Architecture advising to maximize performance and reliability across hybrid cloud data stacks.',
       'talks.eyebrow': 'Talks & Conferences',
       'talks.heading': 'Speaking',
       'talks.card1.title': 'Hardening and Stabilizing 104\'s Database Architecture',
       'talks.card1.subtitle': '104 TechCon Engineering Conference · Presenter',
       'talks.card1.tag': 'Database Architecture',
       'talks.card1.body': 'Shared practices to harden and stabilize 104’s database service architecture across hybrid environments.',
-      'talks.card1.cta': 'View talk'
+      'talks.card1.cta': 'View talk',
+      'projects.wnlin.title': 'wnlin.org Architecture Stack',
+      'projects.wnlin.category': 'Infra',
+      'projects.wnlin.body': 'Static resume site hardened with Cloudflare Pages + Worker CSP, GA4/GTM + Consent Mode, and tailored SEO assets.',
+      'projects.wnlin.tag1': 'Cloudflare Pages',
+      'projects.wnlin.tag2': 'Workers CSP',
+      'projects.wnlin.tag3': 'GA4 & GCM'
     },
     'zh-TW': {
       'hero.eyebrow': '以性能、穩定度、交付速度為核心的產品導向工程師',
@@ -169,13 +178,22 @@ document.addEventListener('DOMContentLoaded', () => {
       'experience.pixnet.tag': '系統營運',
       'experience.pixnet.b1': '管理並維運生產環境的網路系統。',
       'experience.pixnet.b2': '維護資料庫以確保可用性與可靠性。',
+      'projects.eyebrow': '精選作品',
+      'projects.heading': '專案',
+      'projects.lede': '提供混合雲資料堆疊的架構顧問，提升效能與可靠性。',
       'talks.eyebrow': '演講與會議',
       'talks.heading': '演講',
       'talks.card1.title': '強化與穩定 104 資料庫服務架構',
       'talks.card1.subtitle': '104 TechCon 工程年會 · 講者',
       'talks.card1.tag': '資料庫架構',
       'talks.card1.body': '分享在混合環境下強化與穩定 104 資料庫服務架構的實務作法。',
-      'talks.card1.cta': '查看演講'
+      'talks.card1.cta': '查看演講',
+      'projects.wnlin.title': 'wnlin.org 技術棧',
+      'projects.wnlin.category': '基礎架構',
+      'projects.wnlin.body': '以 Cloudflare Pages + Worker CSP 佈署的靜態履歷站，整合 GA4/GTM 與 Consent Mode 並強化 SEO 資產。',
+      'projects.wnlin.tag1': 'Cloudflare Pages',
+      'projects.wnlin.tag2': 'Workers CSP',
+      'projects.wnlin.tag3': 'GA4 與 GCM'
     },
     'zh-CN': {
       'hero.eyebrow': '以性能、稳定度、交付速度为核心的产品导向工程师',
@@ -229,13 +247,22 @@ document.addEventListener('DOMContentLoaded', () => {
       'experience.pixnet.tag': '系统运营',
       'experience.pixnet.b1': '管理并运维生产环境的网络系统。',
       'experience.pixnet.b2': '维护数据库以确保可用性与可靠性。',
+      'projects.eyebrow': '精选作品',
+      'projects.heading': '项目',
+      'projects.lede': '针对混合云数据堆栈提供架构顾问，最大化性能与可靠性。',
       'talks.eyebrow': '演讲与会议',
       'talks.heading': '演讲',
       'talks.card1.title': '强化与稳定 104 数据库服务架构',
       'talks.card1.subtitle': '104 TechCon 工程年会 · 讲者',
       'talks.card1.tag': '数据库架构',
       'talks.card1.body': '分享在混合环境下强化与稳定 104 数据库服务架构的实践做法。',
-      'talks.card1.cta': '查看演讲'
+      'talks.card1.cta': '查看演讲',
+      'projects.wnlin.title': 'wnlin.org 技术栈',
+      'projects.wnlin.category': '基础架构',
+      'projects.wnlin.body': '以 Cloudflare Pages + Worker CSP 部署的静态履历站，整合 GA4/GTM 与 Consent Mode，并强化 SEO 资产。',
+      'projects.wnlin.tag1': 'Cloudflare Pages',
+      'projects.wnlin.tag2': 'Workers CSP',
+      'projects.wnlin.tag3': 'GA4 与 GCM'
     }
   };
 

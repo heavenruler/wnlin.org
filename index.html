@@ -190,11 +190,23 @@
 
     <section id="projects" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h3>Projects</h3>
+        <p class="eyebrow" data-i18n="projects.eyebrow">Selected work</p>
+        <h3 data-i18n="projects.heading">Projects</h3>
       </div>
-      <p class="lede">Architecture advising to maximize performance and reliability across hybrid cloud data stacks.</p>
+      <p class="lede" data-i18n="projects.lede">Architecture advising to maximize performance and reliability across hybrid cloud data stacks.</p>
       <div class="grid three projects-collapsed" id="projects-grid">
+        <article class="card project">
+          <div class="card-header">
+            <h4 data-i18n="projects.wnlin.title">wnlin.org Architecture Stack</h4>
+            <span class="tag accent" data-i18n="projects.wnlin.category">Infra</span>
+          </div>
+          <p class="muted" data-i18n="projects.wnlin.body">Static resume site hardened with Cloudflare Pages + Worker CSP, GA4/GTM + Consent Mode, and tailored SEO assets.</p>
+          <div class="tag-row">
+            <span class="tag" data-i18n="projects.wnlin.tag1">Cloudflare Pages</span>
+            <span class="tag" data-i18n="projects.wnlin.tag2">Workers CSP</span>
+            <span class="tag" data-i18n="projects.wnlin.tag3">GA4 &amp; GCM</span>
+          </div>
+        </article>
         <article class="card project">
           <div class="card-header">
             <h4>Ops Command Center</h4>
@@ -205,18 +217,6 @@
             <span class="tag">Next.js</span>
             <span class="tag">WebSockets</span>
             <span class="tag">PostgreSQL</span>
-          </div>
-        </article>
-        <article class="card project">
-          <div class="card-header">
-            <h4>Growth Experiment Kit</h4>
-            <span class="tag accent">Growth</span>
-          </div>
-          <p class="muted">Feature flag + A/B testing workflow with clear guardrails and reporting.</p>
-          <div class="tag-row">
-            <span class="tag">React</span>
-            <span class="tag">GraphQL</span>
-            <span class="tag">Airflow</span>
           </div>
         </article>
         <article class="card project">
