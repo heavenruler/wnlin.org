@@ -457,6 +457,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  scroll-margin-top: 140px;
 }
 
 .section-heading h3 {
