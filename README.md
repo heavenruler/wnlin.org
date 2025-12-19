@@ -47,6 +47,12 @@ content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' h
 server: cloudflare
 ```
 
+### GA4 與 Google Consent Mode (GCM)
+
+- **GA4**：在 `index.html` `<head>` 內同步載入 `gtag.js?id=G-GVHQ00L7T7`，初始化 `window.dataLayer` 後呼叫 `gtag('js', new Date())` 與 `gtag('config', 'G-GVHQ00L7T7')`，確保每次頁面載入都會送出 page_view。
+- **Google Tag Manager**：植入 `GTM-NQQQJPDZ` 片段（`<script>` + `<noscript>`），作為統一容器管理其他標籤與事件，並提供遠端調整能力。
+- **Google Consent Mode v2**：藉由 GTM 載入 Consent banner（CookieYes）與 Funding Choices，並在 dataLayer 推入 `gcs`, `ad_storage`, `analytics_storage` 等 consent 狀態，確保 GA4、Ads 依據使用者同意進行資料收集；相關來源也已納入 CSP 的 `script-src` 與 `connect-src` 白名單。
+
 ## 技術棧說明
 
 - **前端**：純 `index.html` + `styles.css` + `scripts.js` 的靜態組合，使用 Google Fonts（Space Grotesk、DM Sans）與 Font Awesome Icons（cdnjs）補強排版與圖示。
