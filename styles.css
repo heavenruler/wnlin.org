@@ -523,20 +523,59 @@ p {
   margin: 6px 0 0;
 }
 
-.chips {
+.skill-groups {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.skill-groups {
+.skill-category {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
+.skill-category + .skill-category {
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .skill-category h4 {
-  margin: 0 0 6px;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 6px;
+  position: relative;
+}
+
+.skill-category h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.skill-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px 14px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.4;
 }
 
 .site-footer {
