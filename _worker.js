@@ -10,7 +10,7 @@ export default {
       "style-src 'self' https://fonts.googleapis.com 'unsafe-inline'",
       "img-src 'self' https://www.google-analytics.com https: data:",
       "font-src 'self' https://fonts.gstatic.com data:",
-      "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com",
+      "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://fundingchoicesmessages.google.com",
       "frame-src https://www.googletagmanager.com",
       "object-src 'none'",
       "base-uri 'self'",
