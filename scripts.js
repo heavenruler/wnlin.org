@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.tag3': 'GA4 & GCM',
       'projects.ops.title': 'Database Development Standards Contribution',
       'projects.ops.tag': 'Governance',
-      'projects.ops.body': 'Database governance hub that codifies the RDBMS and NoSQL cache development standards—charset, schema change, TTL, ACL, and safe operations—and turns them into recommended guardrails for the Ops Command Center.',
+      'projects.ops.body': 'Database governance hub that turns RDBMS and NoSQL cache development standards (charset, schema change, TTL, ACL, and safe operations) into recommended guardrails.',
       'projects.ops.tag1': 'Database playbooks',
       'projects.ops.tag2': 'Schema governance',
       'projects.ops.tag3': 'Automation & audits'
