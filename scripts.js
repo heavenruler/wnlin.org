@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.tag3': 'GA4 & GCM',
       'projects.ops.title': 'Database Development Standards Contribution',
       'projects.ops.tag': 'Governance',
-      'projects.ops.body': 'Database governance hub that codifies the RDBMS and NoSQL cache development standards—charset, schema change, TTL, ACL, and safe operations—and feeds those guardrails to the Ops Command Center for automation and audits.',
+      'projects.ops.body': 'Database governance hub that codifies the RDBMS and NoSQL cache development standards—charset, schema change, TTL, ACL, and safe operations—and turns them into recommended guardrails for the Ops Command Center.',
       'projects.ops.tag1': 'Database playbooks',
       'projects.ops.tag2': 'Schema governance',
       'projects.ops.tag3': 'Automation & audits'
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.tag3': 'GA4 與 GCM',
       'projects.ops.title': '資料庫開發準則貢獻',
       'projects.ops.tag': '治理',
-      'projects.ops.body': '資料庫治理樞紐，將 RDBMS 與 NoSQL 快取的開發準則（字符集、Schema 變更、TTL、ACL 與安全操作）落實成守護範圍，並供給 Ops Command Center 進行自動化與稽核。',
+      'projects.ops.body': '資料庫治理樞紐，將 RDBMS 與 NoSQL 快取的開發準則（字符集、Schema 變更、TTL、ACL 與安全操作）落實成建議規範守護範圍。',
       'projects.ops.tag1': '資料庫防呆手冊',
       'projects.ops.tag2': 'Schema/政策治理',
       'projects.ops.tag3': '自動化與稽核'
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.tag3': 'GA4 与 GCM',
       'projects.ops.title': '资料库开发准则贡献',
       'projects.ops.tag': '治理',
-      'projects.ops.body': '资料库治理枢纽，把 RDBMS 与 NoSQL 缓存的开发准则（字符集、Schema 变更、TTL、ACL 与安全操作）具现为治理范围，并提供给 Ops Command Center 作为自动化与稽核依据。',
+      'projects.ops.body': '资料库治理枢纽，把 RDBMS 与 NoSQL 缓存的开发准则（字符集、Schema 变更、TTL、ACL 与安全操作）落实成建议规范守护范围。',
       'projects.ops.tag1': '数据库手册',
       'projects.ops.tag2': 'Schema 治理',
       'projects.ops.tag3': '自动化与审计'
