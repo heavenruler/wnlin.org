@@ -130,7 +130,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.ops.body': 'Database governance hub that turns RDBMS and NoSQL cache development standards (charset, schema change, TTL, ACL, and safe operations) into recommended guardrails.',
       'projects.ops.tag1': 'Database playbooks',
       'projects.ops.tag2': 'Schema governance',
-      'projects.ops.tag3': 'Automation & audits'
+      'projects.ops.tag3': 'Automation & audits',
+      'projects.vsphere.title': 'vSphere IaC Playbook',
+      'projects.vsphere.tag': 'Infrastructure',
+      'projects.vsphere.body': 'Terraform-based demo that organizes dev/staging/prod/drsite stacks, centralizes service/VM metadata, and streamlines init/plan/apply/destroy/sync via Makefile and orchestration scripts with baked-in credential hygiene.',
+      'projects.vsphere.tag1': 'Terraform',
+      'projects.vsphere.tag2': 'vSphere lifecycle',
+      'projects.vsphere.tag3': 'Credential hygiene'
     },
     'zh-TW': {
       'hero.eyebrow': '以性能、穩定度、交付速度為核心的產品導向工程師',
@@ -205,7 +211,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.ops.body': '資料庫治理樞紐，將 RDBMS 與 NoSQL 快取的開發準則（字符集、Schema 變更、TTL、ACL 與安全操作）落實成建議規範守護範圍。',
       'projects.ops.tag1': '資料庫防呆手冊',
       'projects.ops.tag2': 'Schema/政策治理',
-      'projects.ops.tag3': '自動化與稽核'
+      'projects.ops.tag3': '自動化與稽核',
+      'projects.vsphere.title': 'vSphere IaC 實作手冊',
+      'projects.vsphere.tag': '基礎架構',
+      'projects.vsphere.body': 'Terraform 驅動範例，編排 dev/staging/prod/drsite 堆疊、集中服務與 VM metadata，透過 Makefile 與 orchestration 腳本串接 init/plan/apply/destroy/tf_sync，並內建憑證安全管理。',
+      'projects.vsphere.tag1': 'Terraform',
+      'projects.vsphere.tag2': 'vSphere 生命週期',
+      'projects.vsphere.tag3': '憑證治理'
     },
     'zh-CN': {
       'hero.eyebrow': '以性能、稳定度、交付速度为核心的产品导向工程师',
@@ -280,7 +292,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.ops.body': '资料库治理枢纽，把 RDBMS 与 NoSQL 缓存的开发准则（字符集、Schema 变更、TTL、ACL 与安全操作）落实成建议规范守护范围。',
       'projects.ops.tag1': '数据库手册',
       'projects.ops.tag2': 'Schema 治理',
-      'projects.ops.tag3': '自动化与审计'
+      'projects.ops.tag3': '自动化与审计',
+      'projects.vsphere.title': 'vSphere IaC 实作手册',
+      'projects.vsphere.tag': '基础架构',
+      'projects.vsphere.body': 'Terraform 驱动示例，编排 dev/staging/prod/drsite 堆栈、集中服务与 VM 元数据，透过 Makefile 与编排脚本串接 init/plan/apply/destroy/tf_sync，并内建凭证安全管理。',
+      'projects.vsphere.tag1': 'Terraform',
+      'projects.vsphere.tag2': 'vSphere 生命周期',
+      'projects.vsphere.tag3': '凭证治理'
     }
   };
 
