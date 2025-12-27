@@ -124,7 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.body': 'Static resume site hardened with Cloudflare Pages + Worker CSP, GA4/GTM + Consent Mode, and tailored SEO assets.',
       'projects.wnlin.tag1': 'Cloudflare Pages',
       'projects.wnlin.tag2': 'Workers CSP',
-      'projects.wnlin.tag3': 'GA4 & GCM'
+      'projects.wnlin.tag3': 'GA4 & GCM',
+      'projects.ops.title': 'Database Development Standards Contribution',
+      'projects.ops.tag': 'Governance',
+      'projects.ops.body': 'Database governance hub that codifies the RDBMS and NoSQL cache development standards—charset, schema change, TTL, ACL, and safe operations—and feeds those guardrails to the Ops Command Center for automation and audits.',
+      'projects.ops.tag1': 'Database playbooks',
+      'projects.ops.tag2': 'Schema governance',
+      'projects.ops.tag3': 'Automation & audits'
     },
     'zh-TW': {
       'hero.eyebrow': '以性能、穩定度、交付速度為核心的產品導向工程師',
@@ -193,7 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.body': '以 Cloudflare Pages + Worker CSP 佈署的靜態履歷站，整合 GA4/GTM 與 Consent Mode 並強化 SEO 資產。',
       'projects.wnlin.tag1': 'Cloudflare Pages',
       'projects.wnlin.tag2': 'Workers CSP',
-      'projects.wnlin.tag3': 'GA4 與 GCM'
+      'projects.wnlin.tag3': 'GA4 與 GCM',
+      'projects.ops.title': '資料庫開發準則貢獻',
+      'projects.ops.tag': '治理',
+      'projects.ops.body': '資料庫治理樞紐，將 RDBMS 與 NoSQL 快取的開發準則（字符集、Schema 變更、TTL、ACL 與安全操作）落實成守護範圍，並供給 Ops Command Center 進行自動化與稽核。',
+      'projects.ops.tag1': '資料庫防呆手冊',
+      'projects.ops.tag2': 'Schema/政策治理',
+      'projects.ops.tag3': '自動化與稽核'
     },
     'zh-CN': {
       'hero.eyebrow': '以性能、稳定度、交付速度为核心的产品导向工程师',
@@ -262,7 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.wnlin.body': '以 Cloudflare Pages + Worker CSP 部署的静态履历站，整合 GA4/GTM 与 Consent Mode，并强化 SEO 资产。',
       'projects.wnlin.tag1': 'Cloudflare Pages',
       'projects.wnlin.tag2': 'Workers CSP',
-      'projects.wnlin.tag3': 'GA4 与 GCM'
+      'projects.wnlin.tag3': 'GA4 与 GCM',
+      'projects.ops.title': '资料库开发准则贡献',
+      'projects.ops.tag': '治理',
+      'projects.ops.body': '资料库治理枢纽，把 RDBMS 与 NoSQL 缓存的开发准则（字符集、Schema 变更、TTL、ACL 与安全操作）具现为治理范围，并提供给 Ops Command Center 作为自动化与稽核依据。',
+      'projects.ops.tag1': '数据库手册',
+      'projects.ops.tag2': 'Schema 治理',
+      'projects.ops.tag3': '自动化与审计'
     }
   };
 
