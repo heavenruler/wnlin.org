@@ -486,6 +486,11 @@ p {
   margin: 0;
 }
 
+.value-multiline {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
 .section {
   display: flex;
   flex-direction: column;
