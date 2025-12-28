@@ -474,6 +474,22 @@ p {
   margin-top: 14px;
 }
 
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-stack {
+  grid-column: span 2;
+}
+
+@media (max-width: 640px) {
+  .meta-stack {
+    grid-column: span 1;
+  }
+}
+
 .label {
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -484,6 +500,16 @@ p {
 
 .value {
   margin: 0;
+}
+
+.meta-list {
+  margin: 0;
+  padding-left: 18px;
+  list-style: disc;
+  color: var(--muted);
+  display: grid;
+  gap: 6px;
+  line-height: 1.5;
 }
 
 .value-multiline {
