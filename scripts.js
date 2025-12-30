@@ -141,7 +141,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.vsphere.body': 'Terraform-based demo that organizes dev/staging/prod/drsite stacks, centralizes service/VM metadata, and streamlines init/plan/apply/destroy/sync via Makefile and orchestration scripts with baked-in credential hygiene.',
       'projects.vsphere.tag1': 'Terraform',
       'projects.vsphere.tag2': 'vSphere lifecycle',
-      'projects.vsphere.tag3': 'Credential hygiene'
+      'projects.vsphere.tag3': 'Credential hygiene',
+      'projects.ansible.title': 'Ansible Semaphore Playbook Lab',
+      'projects.ansible.tag': 'Automation',
+      'projects.ansible.body': 'Ansible + Semaphore demo that centralizes playbooks, inventory, policy checks, and notifications, showcasing Git version control and credential hygiene.',
+      'projects.ansible.tag1': 'Semaphore UI',
+      'projects.ansible.tag2': 'Ansible Playbooks',
+      'projects.ansible.tag3': 'Inventory Sync',
+      'projects.ansible.tag4': 'Credential Hygiene'
     },
     'zh-TW': {
       'hero.eyebrow': '以性能、穩定度、交付速度為核心的產品導向工程師',
@@ -227,7 +234,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.vsphere.body': 'Terraform 驅動範例，編排 dev/staging/prod/drsite 堆疊、集中服務與 VM metadata，透過 Makefile 與 orchestration 腳本串接 init/plan/apply/destroy/tf_sync，並內建憑證安全管理。',
       'projects.vsphere.tag1': 'Terraform',
       'projects.vsphere.tag2': 'vSphere 生命週期',
-      'projects.vsphere.tag3': '憑證治理'
+      'projects.vsphere.tag3': '憑證治理',
+      'projects.ansible.title': 'Ansible Semaphore 範例實驗室',
+      'projects.ansible.tag': '自動化',
+      'projects.ansible.body': 'Ansible + Semaphore 示範，集中管理 playbooks、inventory、政策審核與通知，展現 Git 版控與憑證治理。',
+      'projects.ansible.tag1': 'Semaphore 介面',
+      'projects.ansible.tag2': 'Ansible Playbooks',
+      'projects.ansible.tag3': 'Inventory 同步',
+      'projects.ansible.tag4': '憑證治理'
     },
     'zh-CN': {
       'hero.eyebrow': '以性能、稳定度、交付速度为核心的产品导向工程师',
@@ -313,7 +327,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects.vsphere.body': 'Terraform 驱动示例，编排 dev/staging/prod/drsite 堆栈、集中服务与 VM 元数据，透过 Makefile 与编排脚本串接 init/plan/apply/destroy/tf_sync，并内建凭证安全管理。',
       'projects.vsphere.tag1': 'Terraform',
       'projects.vsphere.tag2': 'vSphere 生命周期',
-      'projects.vsphere.tag3': '凭证治理'
+      'projects.vsphere.tag3': '凭证治理',
+      'projects.ansible.title': 'Ansible Semaphore 示例实验室',
+      'projects.ansible.tag': '自动化',
+      'projects.ansible.body': 'Ansible + Semaphore 示范，集中管理 playbooks、inventory、策略审查与通知，展示 Git 版本控制与凭证治理。',
+      'projects.ansible.tag1': 'Semaphore 界面',
+      'projects.ansible.tag2': 'Ansible Playbooks',
+      'projects.ansible.tag3': 'Inventory 同步',
+      'projects.ansible.tag4': '凭证治理'
     }
   };
 
