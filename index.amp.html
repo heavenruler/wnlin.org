@@ -258,7 +258,27 @@
     }
   </style>
 </head>
-<body>
+  <body>
+    <amp-analytics type="gtag" id="gtag">
+      <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "G-H9RD9DZ4S5",
+            "config": {
+              "G-H9RD9DZ4S5": {
+                "groups": "default"
+              }
+            }
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
   <main class="page">
     <header>
       <div class="nav-top">
