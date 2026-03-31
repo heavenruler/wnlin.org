@@ -209,6 +209,58 @@
       flex-direction: column;
       gap: 12px;
     }
+    .labroom-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .labroom-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      border: 1px solid var(--stroke);
+      border-radius: 18px;
+      background: linear-gradient(140deg, var(--panel), var(--panel-strong));
+    }
+    .labroom-main h4 {
+      margin: 0;
+      line-height: 1.4;
+      font-size: 18px;
+    }
+    .labroom-main {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .labroom-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .labroom-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+    .labroom-link {
+      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .labroom-linkedin {
+      border-color: rgba(90, 209, 255, 0.26);
+      background: linear-gradient(135deg, rgba(90, 209, 255, 0.16), rgba(124, 240, 196, 0.08));
+    }
+    .labroom-github {
+      border-color: rgba(255, 212, 121, 0.24);
+      background: linear-gradient(135deg, rgba(255, 212, 121, 0.12), rgba(255, 255, 255, 0.04));
+    }
     .section {
       display: flex;
       flex-direction: column;
@@ -254,6 +306,16 @@
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
+      }
+      .labroom-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .labroom-links {
+        justify-content: flex-start;
+      }
+      .labroom-header {
+        align-items: flex-start;
       }
     }
   </style>
@@ -394,6 +456,142 @@
       </div>
     </section>
 
+    <section id="labroom" class="section">
+      <div>
+        <p class="eyebrow">Labroom</p>
+        <h3>Experiments and references</h3>
+      </div>
+      <p>A growing list of experiments, surveys, and testing notes with consistent reference links.</p>
+      <ul class="labroom-list">
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>AWR-Compatible Grafana Observability Dashboard</h4>
+              <span class="tag">Completed</span>
+            </div>
+            <p class="muted">Grafana dashboard design aligned with AWR-style observability views for faster performance review and operational diagnostics.</p>
+            <div class="tag-row">
+              <span class="tag">Grafana</span>
+              <span class="tag">Prometheus</span>
+              <span class="tag">AWR-style</span>
+              <span class="tag">Observability</span>
+              <span class="tag">Performance</span>
+            </div>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/feed/update/urn:li:activity:7428144070008717312" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler/dba_career/blob/master/monitor/prometheus_info/AWR_Report.json" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>Intent-Aware Ops Diagnostics over Prometheus Metrics</h4>
+              <span class="tag">Completed</span>
+            </div>
+            <p class="muted">Prometheus metrics diagnostics workflow focused on intent-aware triage, signal review, and faster operations decision support.</p>
+            <div class="tag-row">
+              <span class="tag">Prometheus</span>
+              <span class="tag">Metrics Scout</span>
+              <span class="tag">Diagnostics</span>
+              <span class="tag">Triage</span>
+              <span class="tag">Operations</span>
+            </div>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/feed/update/urn:li:activity:7431398179713011713" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler/dba_career/tree/master/monitor/prometheus-metrics-scout" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>DocForge - AI Document Knowledge Pipeline</h4>
+              <span class="tag">Completed</span>
+            </div>
+            <p class="muted">AI-oriented document pipeline for ingesting, structuring, and serving knowledge across reference materials.</p>
+            <div class="tag-row">
+              <span class="tag">AI Pipeline</span>
+              <span class="tag">Knowledge Base</span>
+              <span class="tag">Document Import</span>
+              <span class="tag">RAG-ready</span>
+              <span class="tag">ETL</span>
+            </div>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/feed/update/urn:li:activity:7435207725141295104/" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler/dba_career/tree/master/KnowledgeBase/collector/imported" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>PostgreSQL Workload Analyzer (PoWA) PoC Deploy testing</h4>
+              <span class="tag">Completed</span>
+            </div>
+            <p class="muted">PoWA proof-of-concept deployment and validation focused on workload visibility, tuning clues, and setup repeatability.</p>
+            <div class="tag-row">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">PoWA</span>
+              <span class="tag">PoC</span>
+              <span class="tag">Performance</span>
+              <span class="tag">Monitoring</span>
+            </div>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/feed/update/urn:li:activity:7437801917084311554" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler/dba_career/tree/master/monitor/powa_pg17_remote_lab" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>OpenCode DBA Role Skill Router</h4>
+              <span class="tag">Completed</span>
+            </div>
+            <p class="muted">Role-routing design for steering DBA requests into the right OpenCode skills, workflows, and operating context.</p>
+            <div class="tag-row">
+              <span class="tag">OpenCode</span>
+              <span class="tag">DBA Skills</span>
+              <span class="tag">Routing</span>
+              <span class="tag">Workflow</span>
+              <span class="tag">Prompt Ops</span>
+            </div>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/feed/update/urn:li:activity:7438053954590224384/" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler/dba_career/tree/master/KnowledgeBase/dba_skills/dba-team" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>AWS Glue Survey</h4>
+              <span class="tag" style="background:rgba(124,240,196,0.18);color:#0a0f1d;border-color:rgba(124,240,196,0.5);">In progress</span>
+            </div>
+            <p class="muted">Ongoing survey of AWS Glue capabilities, integration patterns, and practical fit for data pipeline use cases.</p>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/in/wnlin/" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+        <li class="labroom-item">
+          <div class="labroom-main">
+            <div class="labroom-header">
+              <h4>TiDB Online DDL Testing</h4>
+              <span class="tag" style="background:rgba(124,240,196,0.18);color:#0a0f1d;border-color:rgba(124,240,196,0.5);">In progress</span>
+            </div>
+            <p class="muted">Ongoing tests around TiDB online DDL behavior, migration safety, and operational impact under schema changes.</p>
+          </div>
+          <div class="labroom-links">
+            <a class="chip" href="https://www.linkedin.com/in/wnlin/" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a class="chip" href="https://github.com/heavenruler" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <section id="certifications" class="section">
       <div>
         <p class="eyebrow">Certifications</p>
@@ -528,7 +726,7 @@
     </section>
 
     <footer>
-      <p>Last updated: <time datetime="2026-03-16">Mar 16, 2026</time></p>
+      <p>Last updated: <time datetime="2026-03-31">Mar 31, 2026</time></p>
       <amp-img src="https://wnlin.org/social-card.png" width="1200" height="627" layout="responsive" alt="Wu Nan Lin social card"></amp-img>
     </footer>
   </main>

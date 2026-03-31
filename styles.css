@@ -467,6 +467,86 @@ p {
   margin-top: 6px;
 }
 
+.labroom-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.labroom-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 20px;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  background: linear-gradient(140deg, var(--panel), var(--panel-strong));
+  box-shadow: var(--glow);
+}
+
+.labroom-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labroom-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.labroom-main h4 {
+  line-height: 1.4;
+}
+
+.labroom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.labroom-link {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.labroom-link:hover {
+  transform: translateY(-1px);
+}
+
+.labroom-linkedin {
+  border-color: rgba(90, 209, 255, 0.26);
+  background: linear-gradient(135deg, rgba(90, 209, 255, 0.16), rgba(124, 240, 196, 0.08));
+}
+
+.labroom-linkedin:hover {
+  color: #9be6ff;
+  border-color: rgba(90, 209, 255, 0.5);
+  box-shadow: 0 10px 24px rgba(90, 209, 255, 0.12);
+}
+
+.labroom-github {
+  border-color: rgba(255, 212, 121, 0.24);
+  background: linear-gradient(135deg, rgba(255, 212, 121, 0.12), rgba(255, 255, 255, 0.04));
+}
+
+.labroom-github:hover {
+  color: #ffe3a0;
+  border-color: rgba(255, 212, 121, 0.45);
+  box-shadow: 0 10px 24px rgba(255, 212, 121, 0.1);
+}
+
 .meta-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -632,6 +712,19 @@ p {
 @media (max-width: 640px) {
   .card-header {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .labroom-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .labroom-links {
+    justify-content: flex-start;
+  }
+
+  .labroom-header {
     align-items: flex-start;
   }
 }
